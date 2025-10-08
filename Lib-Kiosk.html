@@ -41,6 +41,11 @@ html {
 body {
   margin:0;
   background-color: #084d69;
+  /* Add these lines for Flexbox centering */
+  display: flex; /* Enable Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
 
@@ -124,8 +129,7 @@ body {
 }
 
 .resourceIcons {
-  margin-left: 640px;
-  margin-top: 225px;
+
 }
 
 .resourceCard:hover {
@@ -191,8 +195,6 @@ padding-right: 5px;
 /*** Layout For Portrait Desktop Mode ***/
 @media (max-width: 1082px) {
 	.resourceIcons {
-		margin-left: 105px;
-		margin-top: 550px;
 		z-index: 7;
 	}
 }
